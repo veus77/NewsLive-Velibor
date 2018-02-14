@@ -1,0 +1,9 @@
+
+lifestyle_page.lifestyle_page:
+  path: 'lifestyle-page'
+  defaults:
+    _form: '\Drupal\lifestyle_page\Form\LifestylePage'
+    _title: 'Lifestyle'
+  requirements:
+    _access: 'TRUE'
+  

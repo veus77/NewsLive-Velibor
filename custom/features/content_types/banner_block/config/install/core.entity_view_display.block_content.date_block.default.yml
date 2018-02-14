@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.date_block
+    - field.field.block_content.date_block.body
+    - field.field.block_content.date_block.field_banner_date
+  module:
+    - datetime
+    - text
+id: block_content.date_block.default
+targetEntityType: block_content
+bundle: date_block
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_banner_date:
+    weight: 1
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden: {  }

@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * Enabling Homepage Slider
+ */
+function settings_module_update_8421() {
+    \Drupal::service('module_installer')->install(['homepage_slider']);
+}
+
+function settings_module_update_8422() {
+    \Drupal::service('module_installer')->install(['homepage_image_block']);
+}
+
+function settings_module_update_8423() {
+    \Drupal::service('module_installer')->install(['popular_news_front']);
+}
+
+function settings_module_update_8424() {
+    \Drupal::service('module_installer')->install(['health_travel_block']);
+}
+
+function settings_module_update_8425() {
+    \Drupal::service('module_installer')->install(['videos_front']);
+}
+
+function settings_module_update_8426() {
+    \Drupal::service('module_installer')->install(['more_news']);
+}
+
+function settings_module_update_8427() {
+    \Drupal::service('module_installer')->install(['most_viewed']);
+}
+
+function settings_module_update_8428() {
+    \Drupal::service('module_installer')->install(['login_popup_form']);
+}
+
+function settings_module_update_8429() {
+    \Drupal::service('module_installer')->install(['register_popup_form']);
+}
+
+function settings_module_update_8430() {
+    \Drupal::service('module_installer')->install(['trending_news']);
+}
+
+function settings_module_update_8431() {
+    \Drupal::service('module_installer')->install(['technology']);
+}
+
+function settings_module_update_8432() {
+    \Drupal::service('module_installer')->install(['title_slider']);
+}
+function settings_module_update_8433() {
+    \Drupal::service('module_installer')->install(['custom_search']);
+}

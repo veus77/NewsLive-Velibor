@@ -1,0 +1,5 @@
+name: Technology
+description: Custom page Technology
+type: module
+core: 8.x
+package: Custom Pages

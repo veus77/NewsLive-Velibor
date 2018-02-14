@@ -1,0 +1,13 @@
+<?php
+
+function more_news_theme ( $existing, $type, $theme, $path )
+{
+    return [
+        'more_news' => array(
+            'template' => 'more_news',
+            'variables' => [
+                'content' => [],
+            ],
+        ),
+    ];
+}

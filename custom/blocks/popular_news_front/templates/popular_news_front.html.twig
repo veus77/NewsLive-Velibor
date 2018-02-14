@@ -1,0 +1,92 @@
+<div class="titles">
+    <div class="tech-title">
+        <h3>Technology</h3>
+    </div>
+    <div class="life-title">
+        <h3>Lifestyle</h3>
+    </div>
+</div>
+<section class="popular-news-front">
+    <div class="popular-news-tabs">
+
+        <div class="technology">
+            {% for entry in content.technology %}
+                {% if loop.first %}
+                    <div class="single-tech-item first">
+                        <div class="header">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                        </div>
+                        <div class="body">
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                            <div class="creator">
+                                <div class="user">
+                                    <a href="{{ entry.user }}">{{ entry.user }}</a>
+                                </div>
+                                <p>{{ entry.created }}</p>
+                            </div>
+                            <p class="body-text">{{ entry.body }}</p>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="single-tech-item">
+                        <div class="header">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                        </div>
+                        <div class="body">
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                            <div class="creator">
+                                <div class="user">
+                                    <a href="{{ entry.user }}">{{ entry.user }}</a>
+                                </div>
+                                <p>{{ entry.created }}</p>
+                            </div>
+                            <p class="body-text">{{ entry.body }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="lifestyle">
+            {% for entry in content.lifestyles %}
+                {% if loop.first %}
+                    <div class="single-life-item first">
+                        <div class="header">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" /></a>
+                        </div>
+                        <div class="body">
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                            <div class="creator">
+                                <div class="user">
+                                    <a href="{{ entry.user }}">{{ entry.user }}</a>
+                                </div>
+                                <p>{{ entry.created }}</p>
+                            </div>
+                            <p class="body-text">{{ entry.body }}</p>
+                        </div>
+                    </div>
+                {% else %}
+                    <div class="single-life-item">
+                        <div class="header">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" /></a>
+                        </div>
+                        <div class="body">
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                            <div class="creator">
+                                <div class="user">
+                                    <a href="{{ entry.user }}">{{ entry.user }}</a>
+                                </div>
+                                <p>{{ entry.created }}</p>
+                            </div>
+                            <p class="body-text">{{ entry.body }}</p>
+                        </div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.banner_icons
+    - field.storage.block_content.field_banner_icons
+  module:
+    - link
+id: block_content.banner_icons.field_banner_icons
+field_name: field_banner_icons
+entity_type: block_content
+bundle: banner_icons
+label: 'Banner icons'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+  title_predefined: ''
+field_type: link

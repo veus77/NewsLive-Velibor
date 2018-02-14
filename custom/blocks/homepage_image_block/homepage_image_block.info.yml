@@ -1,0 +1,4 @@
+name: Homepage Image Block
+description: Display three taxonomy nodes type technology
+type: module
+core: 8.x

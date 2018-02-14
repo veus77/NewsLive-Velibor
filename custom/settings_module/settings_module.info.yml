@@ -1,0 +1,4 @@
+name: Settings module
+description: Module for settings all modules
+type: module
+core: 8.x

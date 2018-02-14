@@ -1,0 +1,15 @@
+
+<div class="title-slider-wrapper" style="display: none;">
+    <p>Trending</p>
+    <div class="title-slider">
+        {% for entry in content %}
+                <div class="single-title">
+                    <a class="title" href="{{ entry.nid }}">{{ entry.title }}</a>
+                </div>
+        {% endfor %}
+    </div>
+    <div class="controls">
+        <div id="slide-left" style="float:left;"></div>
+        <div id="slide-right" style="float:right;"></div>
+    </div>
+</div>

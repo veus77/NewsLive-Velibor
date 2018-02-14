@@ -1,0 +1,13 @@
+<?php
+
+function videos_front_theme ( $existing, $type, $theme, $path )
+{
+    return [
+        'videos_front' => array(
+            'template' => 'videos_front',
+            'variables' => [
+                'content' => [],
+            ],
+        ),
+    ];
+}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: footer_icons
+label: 'Footer icons'
+revision: 0
+description: ''

@@ -1,0 +1,11 @@
+name: 'banner block'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - datetime
+  - field
+  - link
+  - linkicon
+  - text
+version: 8.x-1.1

@@ -1,0 +1,5 @@
+name: Lifestyle Page
+type: module
+description: Lifestyle Archive Page
+core: 8.x
+package: Custom Pages

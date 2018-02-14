@@ -1,0 +1,4 @@
+name: Most Viewed
+description: Display five most viewed nodes.
+type: module
+core: 8.x

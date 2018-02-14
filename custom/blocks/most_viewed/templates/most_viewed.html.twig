@@ -1,0 +1,29 @@
+<div class="most-viewed-news">
+    {% for entry in content %}
+        {% if loop.first %}
+            <div class="single-news first">
+                <div class="block-image">
+                    <a href="{{ entry.nid }}"> <img src="{{ entry.header_image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    <a href="{{ entry.nid }}"> {{ entry.taxonomy }}</a>
+                </div>
+                <div class="block-title">
+                    <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                    <p>{{ entry.created }}</p>
+                </div>
+            </div>
+        {% else %}
+            <div class="single-news">
+                <div class="block-image">
+                    <a href="{{ entry.nid }}"> <img src="{{ entry.header_image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    <a href="{{ entry.nid }}"> {{ entry.taxonomy }}</a>
+                </div>
+                <div class="block-title">
+                    <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                    <p>{{ entry.created }}</p>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+
+

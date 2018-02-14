@@ -1,0 +1,4 @@
+name: Trending now
+description: Display nodes type video and news
+type: module
+core: 8.x

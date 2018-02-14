@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.lincicon
+    - field.storage.block_content.field_icons
+    - paragraphs.paragraphs_type.icon
+  module:
+    - entity_reference_revisions
+id: block_content.lincicon.field_icons
+field_name: field_icons
+entity_type: block_content
+bundle: lincicon
+label: icon
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon: icon
+    target_bundles_drag_drop:
+      icon:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

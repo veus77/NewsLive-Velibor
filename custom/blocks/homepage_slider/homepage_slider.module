@@ -1,0 +1,12 @@
+<?php
+
+function homepage_slider_theme ( $existing, $type, $theme, $path ) {
+    return [
+        'homepage_slider' => array(
+            'template'  => 'homepage_slider',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+    ];
+}

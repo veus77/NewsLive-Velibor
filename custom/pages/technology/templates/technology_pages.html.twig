@@ -1,0 +1,40 @@
+
+{{ form.form_build_id }}
+{{ form.form_token }}
+{{ form.form_id }}
+
+<div class="single-item">
+    {% for entry in form['#content'].data %}
+        {% if entry is iterable %}
+            {% if loop.first %}
+                <div class="node__content first">
+                    <div class="header">
+                        <img src="{{ entry.image }}" />
+                        <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                    </div>
+                    <h2><a href="{{ entry.nid }}">{{ entry.title }}</a></h2>
+                    <div class="node__meta">
+                        <a href="{{ entry.user }}">{{ entry.user }}</a>
+                        <p>{{ entry.created }}</p>
+                    </div>
+                    <p class="node-body">{{ entry.body }}</p>
+                </div>
+            {% else %}
+                <div class="node__content">
+                    <div class="header">
+                        <img src="{{ entry.image }}" />
+                        <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                    </div>
+                    <h2><a href="{{ entry.nid }}">{{ entry.title }}</a></h2>
+                    <div class="node__meta">
+                        <a href="{{ entry.user }}">{{ entry.user }}</a>
+                        <p>{{ entry.created }}</p>
+                    </div>
+                    <p class="node-body">{{ entry.body }}</p>
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+{{ form.pager }}

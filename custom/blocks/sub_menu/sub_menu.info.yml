@@ -1,0 +1,4 @@
+name: Sub menu block
+description: Display blocks health,food and travel
+type: module
+core: 8.x

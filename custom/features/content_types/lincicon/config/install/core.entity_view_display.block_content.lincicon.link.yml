@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.lincicon
+    - core.entity_view_mode.block_content.link
+    - field.field.block_content.lincicon.body
+  module:
+    - text
+id: block_content.lincicon.link
+targetEntityType: block_content
+bundle: lincicon
+mode: link
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: ds_content
+hidden: {  }

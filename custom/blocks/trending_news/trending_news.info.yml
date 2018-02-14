@@ -1,0 +1,4 @@
+name: Trending News
+description: Display two trending news
+type: module
+core: 8.x

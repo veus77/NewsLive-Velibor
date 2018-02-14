@@ -1,0 +1,4 @@
+name: Videos Frontpage
+description: Display last four videos on frontpage
+type: module
+core: 8.x

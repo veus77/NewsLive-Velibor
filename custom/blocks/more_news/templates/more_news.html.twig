@@ -1,0 +1,33 @@
+
+<section class="more-news-front">
+    <div class="more-news-items">
+        <h2>More News</h2>
+        {% for entry in content %}
+            <div class="single-more-news-item">
+                <div class="header">
+                    {% if entry.header_image %}
+                     <div class="header-image">
+                       <a href="{{ entry.nid }}"> <img src="{{ entry.header_image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                     </div>
+                    {% endif %}
+
+                    {% if entry.video_image %}
+                        <div class="video-image">
+                            <a href="{{ entry.taxonomy }}"> <img src="{{ entry.header_image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                        </div>
+                    {% endif %}
+                    <a href="{{ entry.nid }}">{{ entry.taxonomy }}</a>
+                </div>
+                <div class="body">
+                    <h3><a href="{{ entry.nid }}">{{ entry.title }}</a></h3>
+                    <div class="creator">
+                        <a href="{{ entry.user }}">{{ entry.user }}</a>
+                        <p>{{ entry.created }}</p>
+                    </div>
+                    <p class="node-body">{{ entry.body }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+

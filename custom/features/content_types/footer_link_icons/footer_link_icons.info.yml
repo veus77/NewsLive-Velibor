@@ -1,0 +1,11 @@
+name: 'Footer link icons'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - field
+  - link
+  - linkicon
+  - telephone
+  - text
+version: 8.x-1.0

@@ -1,0 +1,8 @@
+technology.technology:
+  path: 'technology'
+  defaults:
+    _form: '\Drupal\technology\Form\Technology'
+    _title: 'Technology'
+  requirements:
+    _access: 'TRUE'
+

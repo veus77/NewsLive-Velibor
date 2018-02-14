@@ -1,0 +1,35 @@
+<section class="home-image-block">
+    <div id="single-item-wrapper">
+        {% for entry in content %}
+            {% if loop.first %}
+                <div class="single-item first">
+                    <div class="overlay"></div>
+                    <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}">
+                    <div class="text">
+                        <div class="field--name-field-taxonomy">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                        </div>
+                        <div class="slide-title">
+                            <a class="title" href="{{ entry.nid }}">{{ entry.title }}</a>
+                        </div>
+                        <p>{{ entry.created }}</p>
+                    </div>
+                </div>
+            {% else %}
+                <div class="single-item">
+                    <div class="overlay"></div>
+                    <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}">
+                    <div class="text">
+                        <div class="field--name-field-taxonomy">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                        </div>
+                        <div class="slide-title">
+                            <a class="title" href="{{ entry.nid }}">{{ entry.title }}</a>
+                        </div>
+                        <p>{{ entry.created }}</p>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>

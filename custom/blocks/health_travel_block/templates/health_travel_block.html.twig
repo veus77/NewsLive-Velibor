@@ -1,0 +1,67 @@
+<section class="health-travel-block">
+    <div class="health-item">
+        <div class="title">
+            <h3>Health</h3><a href="/health">more</a>
+        </div>
+        {% for entry in content.health %}
+            {% if loop.first %}
+                <div class="single-health-item first">
+                    <div class="header">
+                        <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    </div>
+                    <div class="body">
+                        <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        <div class="created">
+                            <p>{{ entry.created }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="single-health-item">
+                    <div class="header">
+                        <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    </div>
+                    <div class="body">
+                        <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        <div class="created">
+                            <p>{{ entry.created }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <div class="travel-item">
+        <div class="title">
+            <h3>Travel</h3><a href="/travel">more</a>
+        </div>
+        {% for entry in content.travel %}
+            {% if loop.first %}
+                <div class="single-travel-item first">
+                    <div class="header">
+                        <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    </div>
+                    <div class="body">
+                        <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        <div class="created">
+                            <p>{{ entry.created }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="single-travel-item">
+                    <div class="header">
+                        <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                    </div>
+                    <div class="body">
+                        <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        <div class="created">
+                            <p>{{ entry.created }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: following_icons
+label: 'Following icons'
+revision: 0
+description: ''

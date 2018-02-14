@@ -1,0 +1,55 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.lincicon.body
+    - field.field.node.lincicon.field_icon
+    - node.type.lincicon
+  module:
+    - linkicon
+    - text
+    - user
+id: node.lincicon.default
+targetEntityType: node
+bundle: lincicon
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_icon:
+    weight: 102
+    label: above
+    settings:
+      linkicon_prefix: fa
+      linkicon_wrapper_class: ''
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_maxlength: 60
+      linkicon_global_title: ''
+      linkicon_position: ''
+      linkicon_size: ''
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_bundle: ''
+      trim_length: 80
+    third_party_settings: {  }
+    type: linkicon
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,14 @@
+<?php
+
+
+function most_viewed_theme ( $existing, $type, $theme, $path )
+{
+    return [
+        'most_viewed' => array(
+            'template' => 'most_viewed',
+            'variables' => [
+                'content' => [],
+            ],
+        ),
+    ];
+}

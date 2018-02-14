@@ -1,0 +1,41 @@
+{#{{ devel_breakpoint() }}#}
+
+<div class="trending-news-slider">
+    <div class="title-w">
+        <h2>Trending News</h2>
+        <div class="sliding">
+            <a id="next-slide"></a>
+            <a id="prev-slide"></a>
+        </div>
+    </div>
+    <div id="side-slide">
+        {% for entry in content %}
+            <div class="trending-news-slide">
+                {% for data in entry %}
+                    {% if loop.first %}
+                        <div class="single-slide-item first">
+                            <a class="image" href="{{ data.nid }}"> <img src="{{ data.image }}" alt="{{ data.title }}" title="{{ data.title }}"/></a>
+                            <div class="body">
+                                <a class="taxonomy" href="{{ data.taxonomy }}">{{ data.taxonomy }}</a>
+                                <a class="title" href="{{ data.nid }}">{{ data.title }}</a>
+                                <p>{{ data.created }}</p>
+                            </div>
+                        </div>
+                    {% else %}
+                        <div class="single-slide-item">
+                            <a class="image" href="{{ data.nid }}"> <img src="{{ data.image }}" alt="{{ data.title }}" title="{{ data.title }}"/></a>
+                            <div class="body">
+                                <a class="taxonomy" href="{{ data.taxonomy }}">{{ data.taxonomy }}</a>
+                                <a class="title" href="{{ data.nid }}">{{ data.title }}</a>
+                                <p>{{ data.created }}</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        {% endfor %}
+    </div>
+</div>
+
+

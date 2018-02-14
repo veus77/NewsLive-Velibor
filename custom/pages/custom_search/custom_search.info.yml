@@ -1,0 +1,4 @@
+name: Custom Search
+description: Search taxonomy nodes.
+type: module
+core: 8.x

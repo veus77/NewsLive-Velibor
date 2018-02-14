@@ -1,0 +1,13 @@
+
+<div class="popular-news">
+    {% for entry in content %}
+        <div class="single-news">
+            <div class="block-image">
+                <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+            </div>
+            <div class="block-title">
+                <a href="{{ entry.nid }}">{{ entry.title }}</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>

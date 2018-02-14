@@ -1,0 +1,12 @@
+<?php
+
+function video_main_theme ( $existing, $type, $theme, $path ) {
+    return [
+        'news_live' => array(
+            'template'  => 'video_main',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+    ];
+}

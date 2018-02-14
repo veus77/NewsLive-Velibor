@@ -1,0 +1,7 @@
+custom_search.custom_search:
+  path: '/custom-search'
+  defaults:
+    _form: '\Drupal\custom_search\Form\CustomSearch'
+    _title: 'Search'
+  requirements:
+    _access: 'TRUE'

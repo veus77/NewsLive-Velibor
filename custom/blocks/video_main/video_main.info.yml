@@ -1,0 +1,4 @@
+name: Video main
+description: Display four video in main
+type: module
+core: 8.x

@@ -1,0 +1,12 @@
+<?php
+
+function title_slider_theme ( $existing, $type, $theme, $path ) {
+    return [
+        'title_slider' => array(
+            'template'  => 'title_slider',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+    ];
+}

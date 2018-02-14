@@ -1,0 +1,32 @@
+<section class="videos-front">
+    <div class="videos-item">
+        {% for entry in content %}
+            {% if loop.first %}
+                <div class="single-video-item first">
+                    <div class="header">
+                        <div class="img-w">
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                        </div>
+                        <div class="text">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="single-video-item">
+                    <div class="header">
+                        <div class="img-w">
+                            <a href="{{ entry.nid }}"> <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}"/></a>
+                        </div>
+                        <div class="text">
+                            <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                            <a href="{{ entry.nid }}">{{ entry.title }}</a>
+                        </div>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
+

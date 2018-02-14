@@ -1,0 +1,31 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: veus
+ * Date: 12/1/17
+ * Time: 12:49 PM
+ */
+function sub_menu_theme ( $existing, $type, $theme, $path ) {
+    $bool = true;
+    return [
+        'sub_menu' => array(
+            'template'  => 'sub_menu_first',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+        'sub_menu_second' => array(
+            'template'  => 'sub_menu_first',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+
+        'sub_menu_third' => array(
+            'template'  => 'sub_menu_first',
+            'variables' => [
+                'content'  => [],
+            ],
+        ),
+    ];
+}

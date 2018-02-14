@@ -1,0 +1,10 @@
+<?php
+
+function custom_search_theme() {
+    return [
+        'custom_search' => [
+            'render element' => 'form',
+            'template' => 'custom_search'
+        ],
+    ];
+}

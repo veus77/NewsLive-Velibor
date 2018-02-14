@@ -1,0 +1,20 @@
+<section class="front-page-slider">
+    <div id="slideshow">
+        {% for entry in content %}
+        <div class="slide">
+            <div class="overlay"></div>
+            <img src="{{ entry.image }}" alt="{{ entry.title }}" title="{{ entry.title }}">
+            <div class="text">
+                <div class="field--name-field-taxonomy">
+                    <a href="{{ entry.taxonomy }}">{{ entry.taxonomy }}</a>
+                </div>
+                <div class="slide-title">
+                    <a class="title" href="{{ entry.nid }}">{{ entry.title }}</a>
+                </div>
+                <p>{{ entry.created }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</section>

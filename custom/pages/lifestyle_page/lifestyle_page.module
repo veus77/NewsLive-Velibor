@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains lifestyle_page.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function lifestyle_page_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the lifestyle_page module.
+    case 'help.page.lifestyle_page':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Lifestyle Archive Page') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function lifestyle_page_theme() {
+  return [
+    'lifestyle_page' => [
+      'render element' => 'form',
+    ],
+  ];
+}

@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: banner_icons
+label: 'Banner icons'
+revision: 0
+description: ''

@@ -1,0 +1,4 @@
+name: Block News
+type: module
+description: Defines a custom block.
+core: 8.x

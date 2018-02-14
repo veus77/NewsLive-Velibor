@@ -1,0 +1,67 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.footer_icons
+    - field.field.block_content.footer_icons.body
+    - field.field.block_content.footer_icons.field_email_
+    - field.field.block_content.footer_icons.field_footer_icon
+    - field.field.block_content.footer_icons.field_phone_number
+  module:
+    - linkicon
+    - telephone
+    - text
+id: block_content.footer_icons.default
+targetEntityType: block_content
+bundle: footer_icons
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_email_:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: email_mailto
+    region: content
+  field_footer_icon:
+    weight: 1
+    label: hidden
+    settings:
+      linkicon_prefix: fa
+      linkicon_wrapper_class: ''
+      linkicon_style: ''
+      linkicon_color: ''
+      linkicon_maxlength: 60
+      linkicon_global_title: ''
+      linkicon_position: ''
+      linkicon_size: ''
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+      linkicon_link: false
+      linkicon_load: false
+      linkicon_vertical: false
+      linkicon_tooltip: false
+      linkicon_no_text: false
+      linkicon_bundle: ''
+      trim_length: 80
+    third_party_settings: {  }
+    type: linkicon
+    region: content
+  field_phone_number:
+    weight: 2
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+hidden: {  }

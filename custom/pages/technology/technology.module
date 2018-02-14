@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function technology_theme() {
+    return [
+        'technology' => [
+            'render element' => 'form',
+            'template' => 'technology_pages'
+        ],
+    ];
+}
